@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+	<title>Button</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+  background: #1D1B26;
+}
+.sliding-button {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.sliding-button:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+	</style>
+
+</head>
+<body>
+<p style="background-color: black; font-size: 50px; font-family: 'Rubik Beastly', cursive; color: silver;">Кнопки</p>
+<a href="runDZ.html" class="sliding-button" target="blank">Мілашки</a>
+<a href="table.html" class="sliding-button" target="blank">Таблиця напоїв</a>
+<a href="img.html" class="sliding-button" target="blank">Небо</a>
+<a href="table (2).html" class="sliding-button" target="blank">Таблиця кольорів</a>
+<a href="headers.html" class="sliding-button" target="blank">Дінозаври</a>
+</body>
+</html>
